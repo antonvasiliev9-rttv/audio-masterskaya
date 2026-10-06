@@ -1,4 +1,45 @@
+# ============================================================
+#  АудиоМастерская — robots.txt
+#  https://antonvasiliev9-rttv.github.io/audio-masterskaya/
+#  Автор: Антон Васильев
+# ============================================================
+
+# --- Разрешаем всем основным поисковым системам ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Mail.RU_Bot
+Allow: /
+
+# --- Всё остальное ---
 User-agent: *
 Allow: /
 
-Sitemap: https://github.io
+# --- Служебное не индексируем ---
+Disallow: /.git/
+Disallow: /assets/.git/
+Disallow: /*.md$
+Disallow: /LICENSE
+Disallow: /.gitignore
+Disallow: /.nojekyll
+
+# --- Карта сайта (для всех, кто её понимает) ---
+Sitemap: https://antonvasiliev9-rttv.github.io/audio-masterskaya/sitemap.xml
+
+# --- Предпочтительное зеркало (Яндекс, Mail.ru) ---
+Host: antonvasiliev9-rttv.github.io
